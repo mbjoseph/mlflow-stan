@@ -23,7 +23,7 @@ RUN install2.r mlflow
 
 RUN Rscript -e 'mlflow::install_mlflow(python_version = "3.9")'
 
-RUN install2.r bayesplot carrier dplyr janitor palmerpenguins
+RUN install2.r bayesplot carrier dplyr janitor loo palmerpenguins
 
 RUN Rscript -e 'install.packages("cmdstanr", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))'
 
